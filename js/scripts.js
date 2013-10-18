@@ -3,12 +3,16 @@ $(document).ready(function(){
 	//Click Button
 	$('button').click(function(){
 	
-		$('body').hide();
-	
-	
+		//Store Input
+		var zip = $('input').val();	
+		console.log(zip);
+		
 	
 	}); // end click
-
+	
+	
+	
+	
 
 
 
