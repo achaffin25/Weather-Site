@@ -1,4 +1,9 @@
 /* Stylesheet */
+
+body {
+	background-color: #cacaca;
+}
+
 .wrapper {
     width: 50%;
     margin: 0 auto;
