@@ -10,9 +10,11 @@ $(document).ready(function(){
         // GET WEATHER
         $.simpleWeather({
             zipcode: zip,
+            unit: 'f',
             success: function(weather){
-                html = '<h1>' + weather.city + '</h1>';
-                html += '<h3>' + weather.temp + '</h3>';
+            	html = '<img src="img/icons/' + weather.code + '.svg">';
+            	html += '<h1>' + weather.temp + '&deg; ' + weather.units.temp + '</h1>';
+                html += '<h3>' + weather.city + ', ' + weather.region + '</h3>';
                 html += '<p>Tomorrow\'s Forecast High: ' + weather.tomorrow.high + '</p>';
  
                 
@@ -32,4 +34,3 @@ $(document).ready(function(){
     });// end clear input    
     
 });// end document
-}); // end document
