@@ -12,15 +12,23 @@ $(document).ready(function(){
             zipcode: zip,
             unit: 'f',
             success: function(weather){
+            	
+            	
+            	
             	html = '<img src="img/icons/' + weather.code + '.svg">';
-            	html += '<h1>' + weather.temp + '&deg; ' + weather.units.temp + '</h1>';
+            	html += '<h1>' + weather.temp + '&deg;' + '<span>' + weather.units.temp + '</span>' + '</h1>';
                 html += '<h3>' + weather.city + ', ' + weather.region + '</h3>';
                 html += '<p>Tomorrow\'s Forecast High: ' + weather.tomorrow.high + '</p>';
+                
+                
+                $('body').addClass('bg' + weather.code);
  
                 
                 // Output on Page
                 $('#weather').html(html);
+            
             },
+            
             error: function(error) {
                 $("#weather").html('<p>'+error+'</p>');
             }
