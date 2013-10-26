@@ -1,10 +1,268 @@
 /* Stylesheet */
+@import url(http://fonts.googleapis.com/css?family=Alef:400,700);
+
+body {
+	background-color: #cacaca;
+	font-size: 62.5%;
+	font-family: Alef, sans-serif;
+	height: 100%;
+}
+
 .wrapper {
     width: 50%;
+    height: 500px;
     margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.zip {
+	width: 350px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+/* Clearfix */
+.zip:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.zip input {
+	float: left;
+	width: 60%;
+	height: 30px;
+	border: none;
+	padding: 3px 10px 3px 10px;
+	font-size: 2em;
+	margin-top: 8px;
+	color: #555;
+	opacity: .7;
+}
+
+.zip input:focus, .zip input:hover {
+	opacity: .9;
+}
+
+.zip button {
+	float: right;
+	width: 30%;
+	height: 50px;
+	background: none;
+	border: none;
+	font-size: 2em;
+	padding: 10px;
+	color: #3d3d3d;
+}
+
+.zip button:hover {
+	background-color: rgba(0, 0, 0, 0.06);
+	border-radius: 3px;
+	color: #333;
 }
 
 
 #weather {
   margin: 0px auto;
+  height: 100%;
+  padding: 10px 30px 20px 30px;
+  width: 480px;
+  margin-bottom: 200px;
 }
+
+img.todayicon {
+	float: left;
+	width: 200px;
+	margin-right: 30px;
+}
+
+h1 {
+	font-size: 7.5em;
+	font-weight: bold;
+	color: #000;
+}
+
+h1 span {
+	font-size: .6em;
+}
+
+h2 {
+	display: block;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 3em;
+}
+
+p {
+	font-size: 2em;
+	margin-top: 10px;
+}
+
+hr {
+	margin: 40px 0 20px 0;
+	border-top: 3px solid #333;
+}
+
+img.tomorrowicon {
+	width: 75px;
+	float: left;
+	margin: 8px 20px 0 0;
+}
+
+.tomorrow p span {
+	color: #000;
+}
+
+
+/* ==== Simple Media Queries ==== */
+
+@media (max-width: 1100px) {
+
+	.wrapper {
+		width: 591px;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+
+}
+
+@media (max-width: 670px) {
+	
+	.wrapper {
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 20px;
+		height: 100%;
+	}
+	
+	.zip {
+		margin-bottom: 10px;
+	}
+	
+	#weather {
+		width: auto;
+		margin-bottom: 20px;
+	}
+	
+	img.todayicon {
+		float: none;
+		width: 150px;
+		margin: 0 auto;
+		display: block;
+	}
+	
+	h1 {
+		text-align: center;
+		font-size: 6.5em;
+	}
+	
+	h3 {
+		text-align: center;
+	}
+	
+	p {
+		text-align: center;
+	}
+	
+	div.tomorrow p span {
+		font-size: 2em;
+	}
+	
+	div.tomorrow p {
+		text-align: left;
+		font-size: 1.5em;
+	}
+
+}
+
+@media (max-width: 420px) {
+
+
+	.zip input {
+		width: 50%;
+	}
+	
+	.zip button {
+		float: none;
+		margin-left: 17px;
+	}
+	
+	img.todayicon {
+		width: 100px;
+	}
+	
+	div.tomorrow p {
+		text-align: left;
+	}
+
+
+}
+
+
+/* ==== Background Img Codes ----- */
+
+.bg0, .bg1, .bg2 {
+	background-image: url(../img/bgs/tornado.jpg);
+	background-size: cover;
+}
+
+.bg3, .bg4, .bg37, .bg38, .bg39, .bg45, .bg47 {
+	
+	background-image: url(../img/bgs/storm.jpg);
+	background-size: cover;
+}
+
+.bg5, .bg9, .bg11, .bg12, .bg35, .bg40 {
+	
+	background-image: url(../img/bgs/rain.jpg);
+	background-size: cover;
+}
+
+.bg6, .bg7, .bg8, .bg10, .bg17, .bg18 {
+	
+	background-image: url(../img/bgs/icy.jpg);
+	background-size: cover;
+}
+
+.bg13, .bg14, .bg15, .bg16, .bg20, .bg25, .bg41, .bg42, .bg43, .bg46 {
+	
+	background-image: url(../img/bgs/snow.jpg);
+	background-size: cover;
+}
+
+.bg26, .bg28, .bg30, .bg44 {
+	background-image: url(../img/bgs/cloudyskies.jpg);
+	background-size: cover;
+}
+
+.bg19, .bg22, .bg23, .bg24 {
+	background-image: url(../img/bgs/windy.jpg);
+	background-size: cover;
+}
+
+.bg27, .bg29 {
+	background-image: url(../img/bgs/cloudynight.jpg);
+	background-size: cover;
+}
+
+.bg31, .bg33 {
+	background-image: url(../img/bgs/starrynight.jpg);
+	background-size: cover;
+}
+
+.bg32, .bg34, .bg36 {
+	background-image: url(../img/bgs/blueskies.jpg);
+	background-size: cover;
+}
+
+
+
+
+
