@@ -139,6 +139,7 @@ img.tomorrowicon {
 		width: 80%;
 		margin: 0 auto;
 		margin-top: 20px;
+		height: 100%;
 	}
 	
 	.zip {
@@ -147,6 +148,7 @@ img.tomorrowicon {
 	
 	#weather {
 		width: auto;
+		margin-bottom: 20px;
 	}
 	
 	img.todayicon {
@@ -182,13 +184,6 @@ img.tomorrowicon {
 
 @media (max-width: 420px) {
 
-	.wrapper {
-		height: 100%;
-	}
-	
-	#weather {
-		margin-bottom: 20px;
-	}
 
 	.zip input {
 		width: 50%;
